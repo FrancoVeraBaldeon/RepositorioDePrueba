@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="ejercicio7.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con CSS Selectores Pseudo-clase</title>
+</head>
+
+<body>
+    <header id="cabecera">
+        <h1>Formulario con CSS Selectores Pseudo-clase</h1>
+    </header>
+    <main>
+
+        <form action="#" method="get">
+            <table>
+                <tr>
+                    <td><label for="nombre">Nombre:</label></td>
+                    <td><input type="text" id="nombre" name="nombre" placeholder="escribe tu nombre" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Correo electrónico:</label></td>
+                    <td><input type="email" id="email" name="email" minlength="4"></td>
+                </tr>
+                <tr>
+                    <td><label for="telefono">Teléfono:</label></td>
+                    <td><input type="tel" id="telefono" name="telefono" placeholder="Estoy desactivado" disabled></td>
+                </tr>
+                <tr>
+                    <td><label for="opciones">Select Opciones:</label></td>
+                    <td>
+                        <select id="opciones" name="opciones">
+                            <option value="opcion1">Opción 1</option>
+                            <option value="opcion2" selected>Opción 2</option>
+                            <option value="opcion3">Opción 3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="checkbox">Checkbox: varias opciones:</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" checked>
+                        <label for="checkbox2">Opción 1</label>
+                        <input type="checkbox" id="checkbox2" name="checkbox">
+                        <label for="checkbox2">Opción 2</label>
+                        <input type="checkbox" id="checkbox3" name="checkbox">
+                        <label for="checkbox2">Opción 3</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="lista">Data List:</label></td>
+                    <td>
+                        <input type="text" id="listaInput" name="listaInput" list="lista" required>
+                        <datalist id="lista">
+                            <option value="Elemento 1">
+                            <option value="Elemento 2">
+                            <option value="Elemento 3">
+                        </datalist>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="opciones">Hipervículos</label></td>
+                    <td>
+                        <ul>
+                            <li><a href="https://www.iesvenancioblanco.es/" target="_blank">Enlace IES Venanncio</a>
+                            </li>
+                            <li><a href="#cabecera">Enlace Cabecera</a></li>
+                            <li><a href="#pie">Enlace Pie de Página</a></li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="imagen">Imagen</label></td>
+                    <td><img id="imagen" src="img/foxTerrier.png" alt="Imagen perro"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="opciones">Selector de Opciones</label></td>
+                    <td>
+                        <select id="opciones">
+                            <optgroup label="Grupo 1">
+                                <option value="opcion1">Opción 1</option>
+                                <option value="opcion2">Opción 2</option>
+                            </optgroup>
+                            <optgroup label="Grupo 2">
+                                <option value="opcion3">Opción 3</option>
+                                <option value="opcion4" selected>Opción 4</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Input Radio: solo una opción</label></td>
+                    <td>
+
+                        <input type="radio" id="opcion1" name="radioGroup">
+                        <label for="opcion1">Opción 1</label>
+
+                        <input type="radio" id="opcion2" name="radioGroup" checked>
+                        <label for="opcion2">Opción 2</label>
+
+                        <input type="radio" id="opcion3" name="radioGroup">
+                        <label for="opcion3">Opción 3</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h2>Texto</h2>
+                    </td>
+                    <td>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque fugit et ex earum tempora
+                            nihil
+                            accusamus, minus maxime expedita, eligendi quisquam illum modi. Maiores aut excepturi
+                            repellat
+                            harum
+                            enim iusto?</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><button type="submit">Enviar</button></td>
+                </tr>
+            </table>
+        </form>
+    </main>
+    <footer id="pie">
+        <p>Curso Primero de Desarrollo Multiplataforma 2024</p>
+    </footer>
+</body>
+
+</html>

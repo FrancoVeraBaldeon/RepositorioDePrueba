@@ -1,0 +1,81 @@
+
+*{
+    box-sizing: content-box;
+}
+
+a[href$=".pdf"] {
+    background: red;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+img[alt*="mafalda" i]{
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+
+header nav a {
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+header nav a[href="#"] {
+    background-color: yellow;
+}
+
+header nav a[href="#about"]{
+    background-color: blue;
+}
+header nav a[href="#services"]{
+    background-color: pink;
+}
+header nav a[href="#contact"]{
+    background-color: greenyellow;
+}
+
+section {
+    margin: 10px;
+    padding: 15px;
+    background-color: ghostwhite;
+    border: 1px sold white;
+    border-radius: 5px;
+}
+
+aside {
+    background: white;
+    padding: 10px;
+}
+
+footer{
+    margin-top: 50px ;
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 10px 0;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+section + aside {
+    margin-top: 20px;
+    background-color: blue;
+    color: white;
+}
+aside ul > li {
+    margin-bottom: 5px;
+    background-color: yellow;
+    padding: 5px ;
+}
+#special-li{
+    background-color: pink;
+    color: white;
+    font-weight: bold;
+}
+aside ul  {
+    list-style: none;
+    padding: 0;
+}
